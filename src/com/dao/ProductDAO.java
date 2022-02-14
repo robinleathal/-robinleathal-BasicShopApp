@@ -8,6 +8,6 @@ public interface ProductDAO {
 	public void addProduct();
 	List<Product> viewAllProducts();
 	Product viewProduct(int pId);
-	void updateProduct();
-	void deleteProduct();
+	void updateProduct(int pid);
+	void deleteProduct(int pId);
 }

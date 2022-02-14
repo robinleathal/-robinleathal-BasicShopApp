@@ -10,4 +10,6 @@ public interface UserDao {
 	User viewUser(int uId);
 	void updateUser(int uId);
 	void deleteUser(int uId);
+	boolean isAdminUser(String r);
+	boolean verifyUser(String u, String p);
 }

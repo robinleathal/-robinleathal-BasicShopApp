@@ -6,18 +6,24 @@ public class User {
 	private String fName;
 	private String lName;
 	private String passWord;
+	private String role;
+	
+	
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public User(int userID, String userName, String fName, String lName, String passWord) {
+	
+	public User(int userID, String userName, String fName, String lName, String passWord, String role) {
 		super();
 		this.userID = userID;
 		this.userName = userName;
 		this.fName = fName;
 		this.lName = lName;
 		this.passWord = passWord;
+		this.role = role;
 	}
+
 	public int getUserID() {
 		return userID;
 	}
@@ -48,10 +54,16 @@ public class User {
 	public void setPassWord(String passWord) {
 		this.passWord = passWord;
 	}
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
 	@Override
 	public String toString() {
 		return "User [userID=" + userID + ", userName=" + userName + ", fName=" + fName + ", lName=" + lName
-				+ ", passWord=" + passWord + "]";
+				+ ", passWord=" + passWord + ", role=" + role + "]";
 	}
 	
 }
